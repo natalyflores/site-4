@@ -1,0 +1,127 @@
+/* fonts ************/
+@font-face {
+  font-family: DidactGothic;
+  src: url(FONTS/Didact_Gothic/DidactGothic-Regular.ttf);
+}
+h1{  font-family: DidactGothic;
+}
+
+@font-face {
+  font-family: pioret;
+  src: url(FONTS/Poiret_One/PoiretOne-Regular.ttf);
+}
+body{  font-family: pioret;
+}
+
+@@font-face {
+  font-family: spartan;
+  src: url(FONTS/Spartan/Spartan-VariableFont_wght.ttf)
+
+}
+
+a{ font-family: spartan
+}
+/********/
+body{
+  display: flex;
+    justify-content: center;
+    background: repeating-linear-gradient(
+  white,
+  white,
+  pink 50px,
+  #6629a8 200px,
+  #6629a8 200px
+);
+}
+
+#container{
+  position: relative;
+  top: 100px;
+  width: 500px;
+}
+
+#hero-image {
+  display: flex;
+    justify-content: center;
+}
+
+#hero-image img {
+  width: 250px;
+  height: 250px;
+}
+
+#content-box{
+  color: #fff;
+  background: black;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 10px 10px 8px #3b0278;
+}
+
+ul {
+  position: relative;
+  margin: 20px;
+  margin-bottom: 14px;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+
+  padding: 15px;
+  justify-content: center;
+}
+
+a:hover{
+    background: purple;
+    box-shadow: 10px 10px;
+}
+
+#slider{
+  overflow: hidden;
+}
+#slider figure {
+  position: relative;
+  width: 400%;
+  margin:0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+#slider figure img{
+  width: 25%;
+  float: left;
+}
+@keyframes slider {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70%{
+      left: -200%;
+    }
+    75%{
+      left: -300%;
+    }
+    95%{
+      left: -300%;
+    }
+    100%{
+      left: -400%;
+    }
+}
